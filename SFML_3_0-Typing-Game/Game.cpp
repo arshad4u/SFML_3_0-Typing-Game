@@ -1,4 +1,6 @@
 #include "Header.hpp"
+// Here is a small helper for you! Have a look.
+#include "ResourcePath.hpp"
 
 void Game::initVariables() {
     this->health = 10;
@@ -15,7 +17,8 @@ void Game::initVariables() {
 }
 
 void Game::initFont() {
-    this->font.loadFromFile("Fonts/GothicA1-Regular.ttf");
+    if(!this->font.openFromFile(resourcePath()/"Fonts/GothicA1-Regular.ttf"))
+        std::cerr << "Error: Failed to load Text Font ttf !" << std::endl;;
 }
 
 void Game::initText() {
@@ -25,17 +28,27 @@ void Game::initText() {
 }
 
 void Game::initTexture() {
-    this->backgroundTex.loadFromFile("Textures/Desert.jpg");
-    this->textureWalk.loadFromFile("Textures/ZombieWalk.png");
-    this->textureDead.loadFromFile("Textures/ZombieDead.png");
+    if (!this->backgroundTex.loadFromFile(resourcePath()/"Textures/Desert.jpg")) {  //  Use return value
+        std::cerr << "Error: Failed to load background texture !" << std::endl;
+    }
+    if(!this->textureWalk.loadFromFile(resourcePath()/"Textures/ZombieWalk.png")) {  //  Use return value
+        std::cerr << "Error: Failed to load Zombiwalk texture !" << std::endl;
+    }
+    if(!this->textureDead.loadFromFile(resourcePath()/"Textures/ZombieDead.png")) {  //  Use return value
+        std::cerr << "Error: Failed to load ZombieDead texture !" << std::endl;
+    }
+//    this->backgroundTex.loadFromFile(resourcePath()/"Textures/Desert.jpg");
+//    this->textureWalk.loadFromFile(resourcePath()/"Textures/ZombieWalk.png");
+//    this->textureDead.loadFromFile(resourcePath()/"Textures/ZombieDead.png");
 }
 
 void Game::initBackground() {
     this->background.setTexture(this->backgroundTex);
-    this->background.setScale(2.5f, 2.5f);
+    this->background.setScale(Vector2f(2.5f, 2.5f));
 }
 
-Game::Game() {
+Game::Game() : background(this->backgroundTex),uiText(this->font)
+{
     this->initVariables();
     this->initFont();
     this->initText();

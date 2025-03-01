@@ -28,14 +28,14 @@ void Enemy::initSentence(long level) {
 }
 
 void Enemy::initSprite(Texture* textureFake, unsigned x) {
-	this->rectSprite.height = 519;
-	this->rectSprite.width = 430;
+    this->rectSprite.size.y = 519;
+    this->rectSprite.size.x = 430;
 	this->sprite.setTextureRect(rectSprite);
 	this->sprite.setTexture(*textureFake);
-	this->sprite.scale(0.2f, 0.2f);
-	this->sprite.setPosition(
+	this->sprite.scale(Vector2f(0.2f, 0.2f));
+	this->sprite.setPosition(Vector2f(
 		0.f,
-		static_cast<float>(rand() % static_cast<int>(x - 200)) + 75
+		static_cast<float>(rand() % static_cast<int>(x - 200)) + 75)
 	);
 }
 
@@ -45,7 +45,7 @@ void Enemy::initText(Font* fontfake) {
 	this->enemyText.setFillColor(Color::Black);
 }
 
-Enemy::Enemy(unsigned x, long level, Font* fontfake, Texture* textureFake) {
+Enemy::Enemy(unsigned x, long level, Font* fontfake, Texture* textureFake) : enemyText(*fontfake), sprite(*textureFake) {
 	initSentence(level);
 	initSprite(textureFake, x);
 	initText(fontfake);
@@ -58,7 +58,7 @@ void Enemy::renderAlive(RenderTarget &target) {
 	ss << this->displaySentence;
 
 	this->enemyText.setString(ss.str());
-	this->enemyText.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 25);
+	this->enemyText.setPosition(Vector2f(this->sprite.getPosition().x, this->sprite.getPosition().y - 25));
 
 	target.draw(this->enemyText);
 	target.draw(this->sprite);
@@ -82,10 +82,10 @@ Sprite Enemy::getShape() {
 
 void Enemy::animateWalk() {
 	if (this->clock.getElapsedTime().asSeconds() > 0.1f) {
-		if (this->rectSprite.left == 3870) {
-			this->rectSprite.left = 0;
+        if (this->rectSprite.position.x == 3870) {
+            this->rectSprite.position.x = 0;
 		} else {
-			this->rectSprite.left += 430;
+            this->rectSprite.position.x += 430;
 		}
 		sprite.setTextureRect(rectSprite);
 		this->clock.restart();
@@ -93,7 +93,7 @@ void Enemy::animateWalk() {
 }
 
 void Enemy::moveEnemy() {
-	this->sprite.move(this->moveSpeed, 0.f);
+	this->sprite.move(Vector2f(this->moveSpeed, 0.f));
 	animateWalk();
 }
 

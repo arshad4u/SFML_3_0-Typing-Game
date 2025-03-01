@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E4BD9B22D734E48006FF279 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 6E4BD9B02D734E48006FF279 /* Textures */; };
+		6E4BD9B32D734E48006FF279 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 6E4BD9B12D734E48006FF279 /* Fonts */; };
+		6E5925022D72375200C9C42B /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925012D72375200C9C42B /* ResourcePath.mm */; };
+		6E5925052D72375200C9C42B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925042D72375200C9C42B /* main.cpp */; };
+		6E5925192D723D3400C9C42B /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925152D723D3400C9C42B /* Menu.cpp */; };
+		6E5925282D723D4B00C9C42B /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925202D723D4B00C9C42B /* Enemy.cpp */; };
+		6E5925292D723D4B00C9C42B /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925242D723D4B00C9C42B /* GameOver.cpp */; };
+		6E59252A2D723D4B00C9C42B /* DeadEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E59251E2D723D4B00C9C42B /* DeadEnemy.cpp */; };
+		6E59252B2D723D4B00C9C42B /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925222D723D4B00C9C42B /* Game.cpp */; };
+		6E59252C2D723D4B00C9C42B /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E5925262D723D4B00C9C42B /* GameWindow.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		6E4BD96F2D734375006FF279 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = image.tiff;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyTiff\n";
+		};
+		6E4BD9702D7343B0006FF279 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = image.tiff;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyTiff\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		6E4BD95D2D727FEB006FF279 /* SFML_3_0-Typing-Game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML_3_0-Typing-Game-Info.plist"; sourceTree = "<group>"; };
+		6E4BD9B02D734E48006FF279 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Textures; path = "SFML_3_0-Typing-Game/Resources/Textures"; sourceTree = "<group>"; };
+		6E4BD9B12D734E48006FF279 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "SFML_3_0-Typing-Game/Resources/Fonts"; sourceTree = "<group>"; };
+		6E5924FC2D72375200C9C42B /* SFML_3_0-Typing-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML_3_0-Typing-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5925012D72375200C9C42B /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		6E5925032D72375200C9C42B /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		6E5925042D72375200C9C42B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6E5925142D723D3400C9C42B /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
+		6E5925152D723D3400C9C42B /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		6E5925182D723D3400C9C42B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6E59251D2D723D4B00C9C42B /* DeadEnemy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DeadEnemy.hpp; sourceTree = "<group>"; };
+		6E59251E2D723D4B00C9C42B /* DeadEnemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeadEnemy.cpp; sourceTree = "<group>"; };
+		6E59251F2D723D4B00C9C42B /* Enemy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Enemy.hpp; sourceTree = "<group>"; };
+		6E5925202D723D4B00C9C42B /* Enemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		6E5925212D723D4B00C9C42B /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		6E5925222D723D4B00C9C42B /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		6E5925232D723D4B00C9C42B /* GameOver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameOver.hpp; sourceTree = "<group>"; };
+		6E5925242D723D4B00C9C42B /* GameOver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameOver.cpp; sourceTree = "<group>"; };
+		6E5925252D723D4B00C9C42B /* GameWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameWindow.hpp; sourceTree = "<group>"; };
+		6E5925262D723D4B00C9C42B /* GameWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
+		6E5925272D723D4B00C9C42B /* Header.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Header.hpp; sourceTree = "<group>"; };
+		6E5925372D723F9800C9C42B /* SFML_3_0-Typing-Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SFML_3_0-Typing-Game.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6E4BD9A92D734D69006FF279 /* Exceptions for "Textures" folder in "SFML_3_0-Typing-Game" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Desert.jpg,
+				ZombieDead.png,
+				ZombieWalk.png,
+			);
+			target = 6E5924FB2D72375200C9C42B /* SFML_3_0-Typing-Game */;
+		};
+		6E4BD9AF2D734E27006FF279 /* Exceptions for "Fonts" folder in "SFML_3_0-Typing-Game" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GothicA1-Regular.ttf",
+			);
+			target = 6E5924FB2D72375200C9C42B /* SFML_3_0-Typing-Game */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6E4BD9A42D734D5A006FF279 /* Textures */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6E4BD9A92D734D69006FF279 /* Exceptions for "Textures" folder in "SFML_3_0-Typing-Game" target */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		6E4BD9AE2D734E1E006FF279 /* Fonts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6E4BD9AF2D734E27006FF279 /* Exceptions for "Fonts" folder in "SFML_3_0-Typing-Game" target */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E5924F82D72375200C9C42B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E4BD9992D734CDC006FF279 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E4BD9A42D734D5A006FF279 /* Textures */,
+				6E4BD9AE2D734E1E006FF279 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E5924F22D72375200C9C42B = {
+			isa = PBXGroup;
+			children = (
+				6E4BD9B12D734E48006FF279 /* Fonts */,
+				6E4BD9B02D734E48006FF279 /* Textures */,
+				6E5924FE2D72375200C9C42B /* SFML_3_0-Typing-Game */,
+				6E5924FD2D72375200C9C42B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E5924FD2D72375200C9C42B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E5924FC2D72375200C9C42B /* SFML_3_0-Typing-Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E5924FE2D72375200C9C42B /* SFML_3_0-Typing-Game */ = {
+			isa = PBXGroup;
+			children = (
+				6E5925372D723F9800C9C42B /* SFML_3_0-Typing-Game.entitlements */,
+				6E59251D2D723D4B00C9C42B /* DeadEnemy.hpp */,
+				6E59251E2D723D4B00C9C42B /* DeadEnemy.cpp */,
+				6E59251F2D723D4B00C9C42B /* Enemy.hpp */,
+				6E5925202D723D4B00C9C42B /* Enemy.cpp */,
+				6E5925212D723D4B00C9C42B /* Game.hpp */,
+				6E5925222D723D4B00C9C42B /* Game.cpp */,
+				6E5925232D723D4B00C9C42B /* GameOver.hpp */,
+				6E5925242D723D4B00C9C42B /* GameOver.cpp */,
+				6E5925252D723D4B00C9C42B /* GameWindow.hpp */,
+				6E5925262D723D4B00C9C42B /* GameWindow.cpp */,
+				6E5925272D723D4B00C9C42B /* Header.hpp */,
+				6E5925142D723D3400C9C42B /* Menu.hpp */,
+				6E5925152D723D3400C9C42B /* Menu.cpp */,
+				6E5925182D723D3400C9C42B /* README.md */,
+				6E5925012D72375200C9C42B /* ResourcePath.mm */,
+				6E5925032D72375200C9C42B /* ResourcePath.hpp */,
+				6E5925042D72375200C9C42B /* main.cpp */,
+				6E4BD95D2D727FEB006FF279 /* SFML_3_0-Typing-Game-Info.plist */,
+				6E4BD9992D734CDC006FF279 /* Resources */,
+				6E5924FF2D72375200C9C42B /* Supporting Files */,
+			);
+			path = "SFML_3_0-Typing-Game";
+			sourceTree = "<group>";
+		};
+		6E5924FF2D72375200C9C42B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E5924FB2D72375200C9C42B /* SFML_3_0-Typing-Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5925112D72375200C9C42B /* Build configuration list for PBXNativeTarget "SFML_3_0-Typing-Game" */;
+			buildPhases = (
+				6E5924F72D72375200C9C42B /* Sources */,
+				6E5924F82D72375200C9C42B /* Frameworks */,
+				6E5924F92D72375200C9C42B /* Resources */,
+				6E5924FA2D72375200C9C42B /* Run Script */,
+			);
+			buildRules = (
+				6E4BD9702D7343B0006FF279 /* PBXBuildRule */,
+				6E4BD96F2D734375006FF279 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6E4BD9A42D734D5A006FF279 /* Textures */,
+				6E4BD9AE2D734E1E006FF279 /* Fonts */,
+			);
+			name = "SFML_3_0-Typing-Game";
+			packageProductDependencies = (
+			);
+			productName = "SFML_3_0-Typing-Game";
+			productReference = 6E5924FC2D72375200C9C42B /* SFML_3_0-Typing-Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E5924F32D72375200C9C42B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 1620;
+				ORGANIZATIONNAME = Backstagepass;
+				TargetAttributes = {
+					6E5924FB2D72375200C9C42B = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 6E5924F62D72375200C9C42B /* Build configuration list for PBXProject "SFML_3_0-Typing-Game" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E5924F22D72375200C9C42B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6E5924FD2D72375200C9C42B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E5924FB2D72375200C9C42B /* SFML_3_0-Typing-Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E5924F92D72375200C9C42B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4BD9B22D734E48006FF279 /* Textures in Resources */,
+				6E4BD9B32D734E48006FF279 /* Fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E5924FA2D72375200C9C42B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nSFML_DEPENDENCIES_INSTALL_PREFIX=\"\"\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Users/sfml/Desktop/Release/Install-3\"\nCMAKE_INSTALL_LIB_PREFIX=\"/Users/sfml/Desktop/Release/Install-3/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\"\n            do\n                copy \"$SFML_DEPENDENCIES_INSTALL_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$SFML_DEPENDENCIES_INSTALL_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E5924F72D72375200C9C42B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5925192D723D3400C9C42B /* Menu.cpp in Sources */,
+				6E5925282D723D4B00C9C42B /* Enemy.cpp in Sources */,
+				6E5925292D723D4B00C9C42B /* GameOver.cpp in Sources */,
+				6E59252A2D723D4B00C9C42B /* DeadEnemy.cpp in Sources */,
+				6E59252B2D723D4B00C9C42B /* Game.cpp in Sources */,
+				6E59252C2D723D4B00C9C42B /* GameWindow.cpp in Sources */,
+				6E5925052D72375200C9C42B /* main.cpp in Sources */,
+				6E5925022D72375200C9C42B /* ResourcePath.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6E59250F2D72375200C9C42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = DYLIBS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		6E5925102D72375200C9C42B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = DYLIBS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		6E5925122D72375200C9C42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = "SFML_3_0-Typing-Game/SFML_3_0-Typing-Game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRBSQP93SP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				INFOPLIST_FILE = "SFML_3_0-Typing-Game/SFML_3_0-Typing-Game-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
+					/usr/local/lib/,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E5925132D72375200C9C42B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = "SFML_3_0-Typing-Game/SFML_3_0-Typing-Game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRBSQP93SP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				INFOPLIST_FILE = "SFML_3_0-Typing-Game/SFML_3_0-Typing-Game-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
+					/usr/local/lib/,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E5924F62D72375200C9C42B /* Build configuration list for PBXProject "SFML_3_0-Typing-Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E59250F2D72375200C9C42B /* Debug */,
+				6E5925102D72375200C9C42B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5925112D72375200C9C42B /* Build configuration list for PBXNativeTarget "SFML_3_0-Typing-Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5925122D72375200C9C42B /* Debug */,
+				6E5925132D72375200C9C42B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E5924F32D72375200C9C42B /* Project object */;
+}

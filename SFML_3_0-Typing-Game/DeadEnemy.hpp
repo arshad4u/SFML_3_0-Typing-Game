@@ -4,7 +4,7 @@
 
 class DeadEnemy {
 private:
-	Sprite sprite;
+    Sprite sprite;
 	Clock clock;
 	IntRect rectSprite;
 
