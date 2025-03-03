@@ -1,6 +1,5 @@
 #include "Header.hpp"
-// Here is a small helper for you! Have a look.
-#include "ResourcePath.hpp"
+
 
 void Game::initVariables() {
     this->health = 10;
@@ -37,18 +36,17 @@ void Game::initTexture() {
     if(!this->textureDead.loadFromFile(resourcePath()/"Textures/ZombieDead.png")) {  //  Use return value
         std::cerr << "Error: Failed to load ZombieDead texture !" << std::endl;
     }
-//    this->backgroundTex.loadFromFile(resourcePath()/"Textures/Desert.jpg");
-//    this->textureWalk.loadFromFile(resourcePath()/"Textures/ZombieWalk.png");
-//    this->textureDead.loadFromFile(resourcePath()/"Textures/ZombieDead.png");
 }
 
 void Game::initBackground() {
-    this->background.setTexture(this->backgroundTex);
+    
+   
+    
+    this->background.setTexture(this->backgroundTex, true);
     this->background.setScale(Vector2f(2.5f, 2.5f));
 }
 
-Game::Game() : background(this->backgroundTex),uiText(this->font)
-{
+Game::Game() : background(this->backgroundTex), uiText(this->font) {
     this->initVariables();
     this->initFont();
     this->initText();

@@ -15,5 +15,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
+// Here is a small helper for you! Have a look.
+#include "ResourcePath.hpp"
+
 using namespace std;
 using namespace sf;
