@@ -1,9 +1,7 @@
 #include "Header.hpp"
 
 GameWindow::GameWindow(): event(sf::Event::Closed()) {
-    this->window = new RenderWindow(videoMode.getDesktopMode(), "Typing Game", sf::State::Windowed);
-    
-//    this->window = new RenderWindow(VideoMode({800, 600}), "Typing Game");
+    this->window = new RenderWindow(videoMode.getDesktopMode(), "Type India !", sf::State::Windowed);
     
     this->window->setFramerateLimit(60);
 }
@@ -27,78 +25,34 @@ void GameWindow::updateEvents() {
             cout<<"On Window Exit"<<endl;
             this->window->close();
         }
-        if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>();
+        else if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>();
             keyPressed && keyPressed->code == sf::Keyboard::Key::Escape) {
             cout<<"On Escape pressed"<<endl;
             window->close();
         }
-        
-//        if(const auto* keyPressed = event->getIf<sf::Event::KeyPressed>();
-//            if(keyPressed && keyPressed->code == sf::Keyboard::Key::Num9) {
-//                cout<<"On Num9 pressed"<<endl;
-//                if (this->enemies.size() <= this->focusedEnemy + 1) {
-//                    this->focusedEnemy = 0;
-//                } else {
-//                    this->focusedEnemy += 1;
-//                }
-//            }
-//            else if (this->enemies.size()) {
-//                this->enemies[this->focusedEnemy].checkInput(static_cast<char>(keyPressed->code));
-//            }
-//        }
-    
-     if (const auto* textEvent = event->getIf<sf::Event::TextEntered>()) {
-         // Text entered event
-         char32_t unicode = textEvent->unicode;
-         if (unicode < 128) { // ASCII range
-            std::cout << "Character Typed: " << static_cast<char>(unicode) << std::endl;
-            if(unicode==9) { // CHECK FOR TAB KEYPRESS
-                if (this->enemies.size() <= this->focusedEnemy + 1) {
-                    this->focusedEnemy = 0;
-                } else {
-                    this->focusedEnemy += 1;
+        else if (const auto* textEvent = event->getIf<sf::Event::TextEntered>()) {
+             // Text entered event
+             char32_t unicode = textEvent->unicode;
+             if (unicode < 128) { // ASCII range
+                std::cout << "Character Typed: " << static_cast<char>(unicode) << std::endl;
+                 
+                if(unicode==9) { // CHECK FOR TAB KEYPRESS
+                    if (this->enemies.size() <= this->focusedEnemy + 1) {
+                        this->focusedEnemy = 0;
+                    } else {
+                        this->focusedEnemy += 1;
+                    }
                 }
-            }
-            else {
-                if (this->enemies.size()) {
-                    this->enemies[this->focusedEnemy].checkInput(static_cast<char>(unicode));
+                else {
+                    if (this->enemies.size()) {
+                        this->enemies[this->focusedEnemy].checkInput(static_cast<char>(unicode));
+                    }
                 }
             }
         }
+    
     }
-    //    while (this->window->pollEvent(this->event)) {
-    //        switch (this->event.type) {
-    //            case Event::Closed:
-    //                this->window->close();
-    //                break;
-    //
-    //            case Event::KeyPressed:
-    //                if (event.key.code == Keyboard::Escape) {
-    //                    this->window->close();
-    //                }
-    //                break;
-    //
-            /*
-             case Event::TextEntered:
-                    if (this->event.key.code == 9) { // CHECK FOR TAB KEYPRESS
-                        if (this->enemies.size() <= this->focusedEnemy + 1) {
-                            this->focusedEnemy = 0;
-                        } else {
-                            this->focusedEnemy += 1;
-                        }
-                    }
-                    else {
-                        if (this->enemies.size()) {
-                            this->enemies[this->focusedEnemy].checkInput(static_cast<char>(event.text.unicode));
-                        }
-                    }
-                    break;
-             */
-    
-            }
-    
 }
-
 
 void GameWindow::updateWindowEvents() {
     updateMousePositions();
