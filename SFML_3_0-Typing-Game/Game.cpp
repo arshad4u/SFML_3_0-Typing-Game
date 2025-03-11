@@ -39,9 +39,7 @@ void Game::initTexture() {
 }
 
 void Game::initBackground() {
-    
-   
-    
+
     this->background.setTexture(this->backgroundTex, true);
     this->background.setScale(Vector2f(2.5f, 2.5f));
 }
